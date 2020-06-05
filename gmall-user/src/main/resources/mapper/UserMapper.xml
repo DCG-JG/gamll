@@ -3,28 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.atguigu.gmall.user.mapper.UserMapper">
-<!--    <resultMap id="BaseResultMap" type="com.atguigu.gmall.user.bean.UmsMember">-->
-<!--        <id column="id" jdbcType="VARCHAR" property="id" />-->
-<!--        <result column="memberLevelId" jdbcType="VARCHAR" property="memberLevelId" />-->
-<!--        <result column="username" jdbcType="VARCHAR" property="username" />-->
-<!--        <result column="password" jdbcType="VARCHAR" property="password" />-->
-<!--        <result column="nickname" jdbcType="VARCHAR" property="nickname" />-->
-<!--        <result column="phone" jdbcType="VARCHAR" property="phone" />-->
-<!--        <result column="status" jdbcType="INTEGER" property="status" />-->
-<!--        <result column="createTime" jdbcType="TIMESTAMP" property="createTime" />-->
-<!--        <result column="icon" jdbcType="VARCHAR" property="icon" />-->
-<!--        <result column="gender" jdbcType="INTEGER" property="gender" />-->
-<!--        <result column="birthday" jdbcType="TIMESTAMP" property="birthday" />-->
-<!--        <result column="city" jdbcType="VARCHAR" property="city" />-->
-<!--        <result column="job" jdbcType="VARCHAR" property="job" />-->
-<!--        <result column="personalizedSignature" jdbcType="VARCHAR" property="personalizedSignature" />-->
-<!--        <result column="sourceType" jdbcType="INTEGER" property="sourceType" />-->
-<!--        <result column="integration" jdbcType="INTEGER" property="integration" />-->
-<!--        <result column="growth" jdbcType="INTEGER" property="growth" />-->
-<!--        <result column="luckeyCount" jdbcType="INTEGER" property="luckeyCount" />-->
-<!--        <result column="historyIntegration" jdbcType="INTEGER" property="historyIntegration" />-->
 
-<!--    </resultMap>-->
     <select id="selectAllUser" resultType="com.atgugui.gmall.bean.UmsMember">
         select t.*  from ums_member t
     </select>

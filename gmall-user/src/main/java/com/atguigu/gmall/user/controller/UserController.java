@@ -23,8 +23,6 @@ public class UserController {
         return umsMemberReceiveAddresses;
     }
 
-
-
     @RequestMapping("getAllUser")
     @ResponseBody
     public List<UmsMember> getAllUser(){
@@ -66,7 +64,5 @@ public class UserController {
     public String index(){
         return "hello user";
     }
-
-
 
 }

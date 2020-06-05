@@ -8,10 +8,11 @@ import com.atgugui.gmall.service.UserService;
 import com.atguigu.gmall.user.mapper.UmsMemberReceiveAddressMapper;
 import com.atguigu.gmall.user.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Component
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -23,9 +24,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UmsMember> getAllUser() {
-
         List<UmsMember> umsMemberList = userMapper.selectAll();//userMapper.selectAllUser();
-
         return umsMemberList;
     }
 
